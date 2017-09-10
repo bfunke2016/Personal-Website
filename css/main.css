@@ -1,0 +1,452 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+.navigationBar {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    background-color: transparent;
+}
+
+.navigationBar .left {
+    
+    
+}
+
+
+.navigationBar .middle {
+    display: inline-block;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.navigationBar .middle .item {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.navigationBar .middle .item:hover {
+    border: solid 1px #fff;
+    border-radius: 3px;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.navigationBar .right {
+    
+}
+.scrolled {
+    background-color: #403F3E;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .content {
+    display: inline-block;
+    max-width: 700px;
+    width: 100%;
+    color: #fff; 
+    margin-top: -100px;
+}
+.header .profileImage {
+    margin-bottom: 40px;
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    overflow: hidden;
+    background-color: aqua;
+    background: #4c4b49 url(../assets/imgs/profile.jpg);
+    background-size: 180px 180px;
+    border: solid medium #fff;
+}
+
+.header .title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.header .introText {
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    
+}
+
+.header .contactMe {
+    display: inline-block;
+    border: solid 2px #fff;
+    padding: 15px;
+    width: auto;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header .contactMe:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.whoAmI {
+    display: block;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 200px;
+    position: relative;
+    background-color: #fff;/*#C9C3D5;*/
+    background:url("../assets/imgs/brain.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    overflow: hidden;
+}
+.whoAmI .content {
+    display: inline-block;
+    max-width: 1000px;
+    width: 90%;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 34px;
+}
+
+.whoAmI img {
+    display: inline-block;
+    width: 30vw;
+    border-radius: 15vw;
+    overflow: hidden;
+    vertical-align: middle;
+    border: solid thick #fff;
+}
+.whoAmI .title {
+    color: #05668D;
+    font-weight: 700;
+    font-size: 38px;
+    padding-bottom: 50px;
+}
+
+.whoAmI .description {
+    font-weight: 300;
+    font-size: 24px;
+    color: #595758;
+}
+
+.whatIDo {
+    display: block;
+    background-color: #4E4D5C;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+    background: #4E4D5C url("../assets/imgs/heart_2.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+}
+
+.whatIDo .content {
+    display: inline-block;
+    max-width: 1000px;
+    width: 90%;
+    vertical-align: middle;
+    line-height: 34px;
+}
+
+.whatIDo .title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 38px;
+    padding-bottom: 50px;
+}
+
+.whatIDo .description {
+    font-weight: 300;
+    font-size: 24px;
+    color: #E6D1FC;
+}
+.whatIDo img {
+    position: absolute;
+    top: -154px;
+    left: 50%;
+    margin-left: -150px;
+    height: 300px;
+    width: 300px;
+    border: solid 8px #FFF; 
+}
+
+.whyIDo {
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 100px;
+    position: relative;
+    
+    background: #fff url("../assets/imgs/care.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.whyIDo .content {
+    display: inline-block;
+    max-width: 1000px;
+    width: 90%;
+    vertical-align: middle;
+    line-height: 34px;
+}
+.whyIDo .title {
+    color: #05668D;
+    font-weight: 700;
+    font-size: 38px;
+    padding-bottom: 50px;
+}
+.whyIDo .description {
+    font-weight: 300;
+    font-size: 24px;
+    color: #595758;
+}
+
+/* Diamon Image CSS */
+.diamond {
+    transform: rotate(45deg) translateX(70px);
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -207px;
+    border: solid 8px #FFF;
+    top: -150px;
+}
+.diamond img {
+    transform: rotate(-45deg) translateY(-160px);
+}
+
+/* Document Section */
+.documentSection {
+    display: block;
+    background-color: #805E73;
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+}
+.documentSection .content {
+    display: inline-block;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.documentSection .content .sectionTitle {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 38px;
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+.documentSection .research {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border: solid thin #ccc;
+    height: 100px;
+    margin: 10px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 24px;
+    font-weight: 100;
+    cursor: pointer;
+    padding-top: 15px;
+}
+.documentSection .research:hover {
+    background-color: #EFEFEF;
+}
+.documentSection .research .title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+}
+.documentSection .research .date {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    color: #999;
+}
+.documentSection .cvContainer {
+    display: inline-block;
+    width: 100%;
+    max-width: 840px;
+    height: 430px;
+    overflow: hidden;
+    margin-bottom: -5px;
+}
+.documentSection .cv {
+    display: inline-block;
+    width: 100%;
+    max-width: 840px;
+    height: 430px;
+    background-color: #fff;
+    margin-top: 30px;
+    background: url(../assets/imgs/resume.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    cursor: pointer;
+    position: relative;
+    
+    -webkit-transition: margin 0.5s, height 0.5s;
+    transition: margin 0.5s, height 0.5s;
+}
+.documentSection .cv:hover {
+    margin-top: 10px;
+}
+.documentSection .overlay {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 200px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.documentSection .cv:hover .overlay {
+    display: block;
+}
+.documentSection .overlay .viewButton {
+    display: inline-block;
+    padding: 15px;
+    color: #805E73;
+    border: solid thin #805E73;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    background: RGBA(128, 94, 115, 0.2);
+    border-radius: 3px;
+}
+.documentSection .overlay .viewButton:hover {
+    background: RGBA(128, 94, 115, 0.3);
+}
+
+/* Footer View */
+.footer {
+    display: block;
+    background-color: #2c3e50;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #fff;
+}
+.footer .content {
+    display: inline-block;
+    max-width: 1000px;
+    width: 90%;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 34px;
+    clear: both;
+}
+.footer .credits {
+    float: right;
+    text-align: right;
+}
+.footer .title {
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.footer .credits a {
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+.footer .credits a:hover {
+    text-decoration: underline;
+}
+.footer .madeWithLove {
+    display: inline-block;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 100;
+}
+.footer .madeWithLove span {
+    color: #c0392b;
+    font-weight: 300;
+}
+.footer .madeWithLove .green {
+    color: #16a085;
+}
+.footer .madeWithLove .purple {
+    color: #8e44ad;
+}
+.footer .contactMe {
+    float: left;
+    text-align: left;
+}
+
+@media screen and (max-width: 400px){
+    .documentSection .research {
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .footer .contactMe {
+        text-align: center;
+        float: none;
+        padding-bottom: 40px;
+    }
+    .footer .credits {
+        text-align: center;
+        float: none;
+    }
+}

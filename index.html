@@ -1,0 +1,176 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Becca USC Personal Site</title>
+        <meta name="description" content="Becca USC Personal Site">
+        <meta name="author" content="Becca Funke">
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" />
+        <!-- Javascript Files -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var navigationBarTop = $("#navBar").offset().top;
+                $(window).scroll(function(event) {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > navigationBarTop) {
+                        $("#navBar").addClass("scrolled");
+                    }
+                    else {
+                        $("#navBar").removeClass("scrolled");
+                    }
+                });
+            });
+            /*
+             * Opens a new tab without opening a new window or redirecting
+             * the current page that the user is on.
+             */
+            function openTab(url) {
+                var win = window.open(url, '_blank');
+                win.focus();
+            }
+        </script>
+    </head>
+
+    <body>
+        
+        <div class="navigationBar" id="navBar">
+            <div class="left" >
+            </div>
+            <div class="middle">
+                <a href="#whoAmI">
+                    <div class="item">
+                        Who I am 
+                    </div>
+                </a>
+                <a href="#whatIDo">
+                    <div class="item">
+                        What I do
+                    </div>
+                </a>
+                <a href="#whyIDo">
+                    <div class="item">
+                        Why I do it
+                    </div>
+                </a>
+                <a href="#myResearch">
+                    <div class="item">
+                        My research
+                    </div>
+                </a>
+            </div>
+            <div class="right">
+            </div>
+        </div>
+        
+        <div class="header" data-parallax="scroll" data-image-src="assets/imgs/header.jpg">
+            <div class="content">
+                <div class="profileImage">
+                </div>
+                
+                <div class="title">
+                    HELLO, MY NAME IS BECCA
+                </div>
+                
+                 <div class="introText">
+                     I am a PhD candidate at USC working in Maja Mataric's Social Interaction Lab.
+                </div>
+                <a href="#contactMe">
+                    <div class="contactMe">
+                        CONTACT ME
+                    </div>
+                </a>
+                   
+            </div>
+        </div>
+        
+        <!-- This is the who am I section -->
+        <div class="whoAmI" id="whoAmI">
+            <div class="title">
+                    WHO AM I?
+                </div>
+            <div class="content">
+                <div class="description">
+                    My name is Rebecca Funke, and I am a second year computer science PhD student at the University of Southern California. My research focuses on advancing AI via real-world applications. I am also spent much of my time involved in promoting and improving K-12 computer science education. Outside of computer science I am an active traveler, explorer, and foodie! I am ready for any adventure life throws my way! To learn more about my work look at my resume below.  
+                </div>
+            </div>
+        </div>
+        
+        <!-- This is the what I do section -->
+        <div class="whatIDo" id="whatIDo">
+            <img src="assets/imgs/photo.png" />
+            <div class="content">
+                <div class="title">
+                    WHAT I DO?
+                </div>
+                <div class="description">
+                    Currently I am a member of Maja Mataric's Social Interaction Lab at USC. Our lab focuses on developing computational principles and techniques to enable socially assistive human-robot interaction. The goal of Socially Assistive Robotics (SAR) is to improve user health and wellness, communication, learning, and autonomy. My specific work focuses on considering how to improve reward models for SAR systems to motivate each user to stay engaged with the system over multiple uses. 
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Why I Do It Section -->
+        <div class="whyIDo" id="whyIDo">
+            <div class="diamond">
+                <div class="innerDiv">
+                    <img src="assets/imgs/teaching.JPG" />
+                </div>
+            </div>  
+            <div class="content">
+                <div class="title">
+                    Why I Do It?
+                </div>
+                <div class="description">
+                    Throughout my life, I have found great pleasure in helping those in need. Maja's lab at USC helps me bring together my two main goals in life: (1) expand my computer science knowledge and (2) assist others whenever possible. Here at USC I have the ability to combine these driving interest in my life. 
+                </div>
+            </div>
+        </div>
+        
+        <!-- Documents Section -->
+        <div class="documentSection" id="myResearch">
+         
+                
+                <div class="cvContainer">
+                    <div class="cv">
+                        <div class="overlay">
+                            <div class="viewButton" onclick="openTab('assets/files/Resume.pdf');">
+                                VIEW MY RESUME
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Section -->
+        <div class="footer" id="footer">
+            <div class="content">
+                <div class="contactMe" id="contactMe">
+                    <div class="title">Contact Me</div>
+                    rfunke@usc.edu<br />
+                    Ronald Tutor Hall (RTH) <br />
+                    3710 McClintock Ave, Room 423<br />
+                    Los Angeles, CA 90089-0781
+                </div>
+                <div class="credits">
+                    <div class="title">Credits</div>
+                    "<a href="https://thenounproject.com/term/caring-people/583196">Caring-People</a>" icon by Hea Poh Lin from the <a href="https://thenounproject.com">noun project</a><br/>
+
+                    "<a href="https://thenounproject.com/term/heart/405436">Heart</a>" icon by Ilya Tsarenko from the <a href="https://thenounproject.com">noun project</a><br/>
+
+                    "<a href="https://thenounproject.com/term/artificial-intelligence/641778">Artificial Intelligence</a>" icon by Souvik Maity from the <a href="https://thenounproject.com">noun project</a>
+                </div>
+            </div>
+            <br />
+            <div class="madeWithLove">
+                <span class="purple">made</span> with <span>love</span> by <span class="green">me</span>
+            </div>
+        </div>
+    </body>
+</html>
